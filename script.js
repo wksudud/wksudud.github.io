@@ -184,7 +184,7 @@
         en: 'Material-to-opportunity matching.'
       },
       links: [
-        { label: 'GitHub', href: 'https://github.com/wksudud' }
+        { label: 'GitHub', href: 'https://github.com/wksudud/resumefit-agent' }
       ],
       motivation: {
         zh: '求职材料与机会匹配长期依赖人工反复调整，希望通过语义系统让匹配更清晰、可解释。',
@@ -203,8 +203,8 @@
         en: 'It turns self-presentation into a systems problem: materials, opportunities, and project evidence need to align in one semantic structure.'
       },
       evidence: {
-        zh: '当前以原型与工作流叙事展示，后续可补 GitHub 仓库、Demo 或独立项目页。',
-        en: 'Currently shown as a prototype and workflow narrative; later it can add a GitHub repo, demo, or dedicated project page.'
+        zh: '公开 GitHub 仓库已创建，包含源码、测试、样例数据和离线验证流程；Streamlit Demo 等待网页端登录后部署。',
+        en: 'The public GitHub repository is live with source code, tests, sample data, and offline verification; Streamlit deployment is pending web sign-in.'
       }
     },
     {
