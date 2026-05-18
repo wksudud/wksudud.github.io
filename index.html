@@ -1,220 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="BUPT undergraduate portfolio for AI Agent, LLM application engineering, and AIOps projects."
-    />
-    <title>AI Agent Portfolio | BUPT AIOps & LLM Engineering</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Portfolio home">
-        <span class="brand-mark">AI</span>
-        <span data-i18n="brand">Agent Portfolio</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#projects" data-i18n="navProjects">项目</a>
-        <a href="#workflow" data-i18n="navWorkflow">工作流</a>
-        <a href="#contact" data-i18n="navContact">联系</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Systems / 个人系统</title>
+  <meta name="description" content="A personal systems gallery for agent projects and AI workflows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="language-switch" aria-label="Language selector">
+      <button class="language-button active" type="button" data-lang="zh" aria-pressed="true">中</button>
+      <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="hero-content fade-up">
+      <p class="manifesto-mark" data-i18n="heroMark">赋智于器，化念成形。</p>
+      <h1 class="manifesto-cn" data-i18n="heroTitle">赋予模型以思想，赋予想象以形态。</h1>
+      <nav class="hero-links">
+        <a href="https://github.com/wksudud" target="_blank" rel="noopener">github.com/wksudud</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="mailto:3141942330@qq.com">3141942330@qq.com</a>
       </nav>
-      <div class="lang-switch" role="group" aria-label="Language selector">
-        <button class="lang-button active" type="button" data-lang="zh">中</button>
-        <button class="lang-button" type="button" data-lang="en">EN</button>
+    </div>
+    <aside class="hero-meta" aria-label="System metadata">
+      <span>2026</span>
+      <span class="meta-sep" aria-hidden="true">/</span>
+      <span>Personal Systems</span>
+      <span class="meta-sep" aria-hidden="true">/</span>
+      <span>AI Workflow</span>
+    </aside>
+  </header>
+
+  <section id="status" class="status fade-up">
+    <h2 class="section-label"><span class="label-accent">01</span> <span data-i18n="statusLabel">当前状态</span></h2>
+    <div class="status-card">
+      <span class="status-badge" data-i18n="statusBadge">即将毕业 · 寻找机会</span>
+      <p class="status-body" data-i18n="statusBody">我即将完成学业，正在寻找能将AI系统工程能力落地的机会。我关注AI工作流、多Agent协作与系统自动化方向，希望加入注重工程质量和系统思维的团队。如果你正在构建需要这些能力的项目，欢迎联系。</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="systems" class="systems">
+      <h2 class="section-label fade-up"><span class="label-accent">02</span> <span data-i18n="systemsLabel">Systems</span></h2>
+      <div class="showroom fade-up" aria-live="polite">
+        <button class="showroom-preview prev" type="button" data-gallery="prev" aria-label="Previous project">
+          <span class="preview-kicker" data-i18n="prevLabel">Previous</span>
+          <strong data-project-prev-title>Multica Workflow</strong>
+          <span data-project-prev-summary>Multi-agent project governance.</span>
+        </button>
+
+        <article class="showroom-stage">
+          <div class="stage-topline">
+            <span data-project-index>01 / 03</span>
+            <span data-project-status>Live system</span>
+          </div>
+          <h3 data-project-title>TelecomOps Agent</h3>
+          <p class="stage-tagline" data-project-tagline>Network operations intelligence for telecom scenarios.</p>
+          <dl class="stage-flow">
+            <div>
+              <dt data-i18n="inputLabel">Input</dt>
+              <dd data-project-input>Network operations queries, alarms &amp; real-time telemetry streams</dd>
+            </div>
+            <div>
+              <dt data-i18n="systemLabel">System</dt>
+              <dd data-project-system>Reasoning workflow for telecom diagnostics and operations</dd>
+            </div>
+            <div>
+              <dt data-i18n="outputLabel">Output</dt>
+              <dd data-project-output>Fault judgement, remediation suggestions &amp; executable paths</dd>
+            </div>
+          </dl>
+          <div class="stage-links" data-project-links></div>
+          <button class="detail-toggle" type="button" data-detail-toggle aria-expanded="false">
+            <span data-i18n="detailToggle">展开详情</span>
+            <span class="toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="detail-panel" data-detail-panel hidden>
+            <dl>
+              <div>
+                <dt data-i18n="detailMotivation">Motivation</dt>
+                <dd data-project-motivation></dd>
+              </div>
+              <div>
+                <dt data-i18n="detailDesign">Design Decisions</dt>
+                <dd data-project-design></dd>
+              </div>
+              <div>
+                <dt data-i18n="detailNext">Next Steps</dt>
+                <dd data-project-next></dd>
+              </div>
+              <div>
+                <dt data-i18n="detailLearning">Experience</dt>
+                <dd data-project-learning></dd>
+              </div>
+              <div>
+                <dt data-i18n="detailEvidence">Evidence</dt>
+                <dd data-project-evidence></dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <button class="showroom-preview next" type="button" data-gallery="next" aria-label="Next project">
+          <span class="preview-kicker" data-i18n="nextLabel">Next</span>
+          <strong data-project-next-title>ResumeFit Agent</strong>
+          <span data-project-next-summary>Material-to-opportunity matching system.</span>
+        </button>
+
+        <div class="showroom-controls" role="tablist" aria-label="Project gallery controls" data-gallery-dots></div>
       </div>
-    </header>
+    </section>
 
-    <main id="top">
-      <section class="hero section">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="eyebrow">北邮本科 · AI Agent / AIOps / LLM 应用工程</p>
-          <h1 data-i18n="heroTitle">把 Agent 工作流做成可验证、可展示、可投递的工程作品。</h1>
-          <p class="hero-lead" data-i18n="heroLead">
-            面向 AI Agent 应用开发、LLM 应用工程和通信网络智能运维岗位，作品集聚焦真实流程：
-            需求拆解、工具调用、证据约束、评估验证和可访问 Demo。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects" data-i18n="viewProjects">查看项目</a>
-            <a class="button secondary" href="https://github.com/wksudud" target="_blank" rel="noreferrer" data-i18n="github">
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div class="hero-visual" aria-label="Agent workflow dashboard">
-          <div class="visual-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="signal-grid">
-            <div class="signal-card accent-teal">
-              <strong>01</strong>
-              <span data-i18n="visualInput">输入</span>
-              <p>Resume · JD · Metrics</p>
-            </div>
-            <div class="signal-card accent-gold">
-              <strong>02</strong>
-              <span data-i18n="visualAgent">Agent</span>
-              <p>Retrieve · Diagnose · Verify</p>
-            </div>
-            <div class="signal-card accent-red">
-              <strong>03</strong>
-              <span data-i18n="visualOutput">输出</span>
-              <p>Report · Ticket · Portfolio</p>
-            </div>
-          </div>
-          <div class="trace">
-            <div class="trace-line"></div>
-            <div class="trace-row"><span>Evidence</span><b>92.45</b></div>
-            <div class="trace-row"><span>Smoke</span><b>PASS</b></div>
-            <div class="trace-row"><span>Boundary</span><b>SAFE</b></div>
-          </div>
-        </div>
-      </section>
+    <section id="labnotes" class="labnotes fade-up">
+      <h2 class="section-label"><span class="label-accent">03</span> <span data-i18n="labnotesLabel">Lab Notes</span></h2>
+      <div class="labnotes-grid">
+        <article class="labnote-card">
+          <span class="labnote-index">01</span>
+          <h3 data-i18n="labnoteOneTitle">Agent Contract 模式</h3>
+          <p data-i18n="labnoteOneText">探索将模糊需求转化为可执行Agent合同的工作流模式：先定义输入、输出、边界和不可触碰区域，再让Agent在合同范围内自主推进。</p>
+        </article>
+        <article class="labnote-card">
+          <span class="labnote-index">02</span>
+          <h3 data-i18n="labnoteTwoTitle">多Agent编排</h3>
+          <p data-i18n="labnoteTwoText">研究多Agent协作中的上下文预算、并发控制与证据收束策略，让多个Agent在各自车道内高效协作而不互相干扰。</p>
+        </article>
+        <article class="labnote-card">
+          <span class="labnote-index">03</span>
+          <h3 data-i18n="labnoteThreeTitle">Workflow-as-Product</h3>
+          <p data-i18n="labnoteThreeText">把工作流本身当作产品迭代：从一次性脚本到可复用系统，每个工作流都留下可审计的验证记录和交接文档。</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="section direction" aria-labelledby="direction-title">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="directionEyebrow">投递定位</p>
-          <h2 id="direction-title" data-i18n="directionTitle">主攻实践型 AI 工程岗位，不走传统算法或服务销售路线。</h2>
-        </div>
-        <div class="role-grid">
-          <article>
-            <span>01</span>
-            <h3 data-i18n="roleAgent">AI Agent 应用开发</h3>
-            <p data-i18n="roleAgentCopy">能把 Agent workflow、RAG、工具调用和评估做成可运行产品。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3 data-i18n="roleAIOps">AIOps / 网络智能化</h3>
-            <p data-i18n="roleAIOpsCopy">北邮背景与通信网络场景结合，适合运营商、云厂商和运维智能化团队。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3 data-i18n="roleProduct">AI 产品工程</h3>
-            <p data-i18n="roleProductCopy">关注从需求、界面、验证到发布的完整链路，而不是只停留在模型调用。</p>
-          </article>
-        </div>
-      </section>
+    <section id="method" class="method fade-up">
+      <h2 class="section-label"><span class="label-accent">04</span> <span data-i18n="methodLabel">How I Build</span></h2>
+      <div class="method-hero">
+        <p class="method-classic" data-i18n="methodClassic">人定其向，智达其境。</p>
+        <p class="method-statement" data-i18n="methodStatement">人定义方向，智能完成抵达。</p>
+        <p class="method-note" data-i18n="methodNote">我更关注系统如何把人的意图变成可执行的过程：定义方向，拆解路径，让智能完成中间的距离。</p>
+      </div>
+      <div class="method-grid">
+        <article class="method-card">
+          <span>01</span>
+          <h3 data-i18n="methodCardOneTitle">把想法压成接口</h3>
+          <p data-i18n="methodCardOneText">先定义输入、输出、边界和不可触碰区域，让模糊想法变成可以执行的系统合同。</p>
+        </article>
+        <article class="method-card">
+          <span>02</span>
+          <h3 data-i18n="methodCardTwoTitle">让 Agent 分工前进</h3>
+          <p data-i18n="methodCardTwoText">把创意、实现、审查、验证拆给不同角色，每个角色只拿到必要上下文和明确验收标准。</p>
+        </article>
+        <article class="method-card">
+          <span>03</span>
+          <h3 data-i18n="methodCardThreeTitle">用证据收束结果</h3>
+          <p data-i18n="methodCardThreeText">每次交付都要留下链接、截图、命令输出或检查记录，而不是只说“已经完成”。</p>
+        </article>
+      </div>
+      <div class="workflow-map" aria-label="Workflow sequence">
+        <article class="workflow-node">
+          <span>01</span>
+          <h3 data-i18n="railOne">Direction</h3>
+          <p data-i18n="railOneText">Define the human intent and the visible destination.</p>
+        </article>
+        <article class="workflow-node">
+          <span>02</span>
+          <h3 data-i18n="railTwo">Contract</h3>
+          <p data-i18n="railTwoText">Turn fuzzy work into inputs, outputs, constraints, and acceptance.</p>
+        </article>
+        <article class="workflow-node">
+          <span>03</span>
+          <h3 data-i18n="railThree">Delegation</h3>
+          <p data-i18n="railThreeText">Send bounded work to the right agent lane with compact context.</p>
+        </article>
+        <article class="workflow-node">
+          <span>04</span>
+          <h3 data-i18n="railFour">Verification</h3>
+          <p data-i18n="railFourText">Check links, browser behavior, command output, and boundaries.</p>
+        </article>
+        <article class="workflow-node">
+          <span>05</span>
+          <h3 data-i18n="railFive">Artifact</h3>
+          <p data-i18n="railFiveText">Ship the result as a reusable page, note, report, or workflow pattern.</p>
+        </article>
+      </div>
+      <ul class="keywords">
+        <li>Agent-First</li>
+        <li>Workflow-as-Product</li>
+        <li>Systems over Scripts</li>
+      </ul>
+    </section>
 
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="projectsEyebrow">Portfolio</p>
-          <h2 id="projects-title" data-i18n="projectsTitle">三个项目共同证明：会做 Agent，也会把它包装成工程资产。</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="card-top">
-              <span class="status live" data-i18n="statusPublic">GitHub 已公开</span>
-              <span class="project-index">01</span>
-            </div>
-            <h3>TelecomOps Agent</h3>
-            <p class="tagline" data-i18n="telecomTagline">通信网络智能运维 Agent，用于异常检测、根因诊断和工单建议。</p>
-            <dl>
-              <div>
-                <dt data-i18n="problem">问题</dt>
-                <dd data-i18n="telecomProblem">网络运维信号分散在指标、告警和知识文档中，难以快速形成处置建议。</dd>
-              </div>
-              <div>
-                <dt data-i18n="workflow">流程</dt>
-                <dd data-i18n="telecomWorkflow">Mock 数据生成 → 异常识别 → 知识检索 → 诊断 → 工单与报告输出。</dd>
-              </div>
-              <div>
-                <dt data-i18n="evidence">证据</dt>
-                <dd>SMOKE_TEST_PASS · UNIT_TESTS_PASS · R-GPT 92.45/100</dd>
-              </div>
-            </dl>
-            <div class="card-actions">
-              <a href="https://github.com/wksudud/telecomops-agent" target="_blank" rel="noreferrer" data-i18n="openGithub">打开 GitHub</a>
-              <a href="https://telecomops-agent.streamlit.app/" target="_blank" rel="noreferrer" data-i18n="openDemo">打开 Demo</a>
-            </div>
-          </article>
+    <section id="tools" class="tools fade-up">
+      <h2 class="section-label"><span class="label-accent">05</span> <span data-i18n="toolsLabel">Tools</span></h2>
+      <div class="tool-groups">
+        <article class="tool-group">
+          <h3 data-i18n="toolsAgentLabel">Agent workflow</h3>
+          <ul>
+            <li>Multica</li>
+            <li>Codex</li>
+            <li>ContextPacket</li>
+            <li>Multi-agent review</li>
+          </ul>
+        </article>
+        <article class="tool-group">
+          <h3 data-i18n="toolsBuildLabel">Build surface</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </article>
+        <article class="tool-group">
+          <h3 data-i18n="toolsProjectLabel">Project stack</h3>
+          <ul>
+            <li>Python</li>
+            <li>Streamlit</li>
+            <li>GitHub</li>
+            <li>PowerShell</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
 
-          <article class="project-card">
-            <div class="card-top">
-              <span class="status building" data-i18n="statusLocal">本地 MVP 已完成</span>
-              <span class="project-index">02</span>
-            </div>
-            <h3>ResumeFit Agent</h3>
-            <p class="tagline" data-i18n="resumeTagline">简历、JD 与 GitHub 证据匹配 Agent，生成岗位匹配报告和改写建议。</p>
-            <dl>
-              <div>
-                <dt data-i18n="problem">问题</dt>
-                <dd data-i18n="resumeProblem">简历项目常常没有和岗位 JD、GitHub 证据形成清晰对应。</dd>
-              </div>
-              <div>
-                <dt data-i18n="workflow">流程</dt>
-                <dd data-i18n="resumeWorkflow">解析简历与 JD → 映射 GitHub 证据 → 评分 → 改写建议 → 面试追问。</dd>
-              </div>
-              <div>
-                <dt data-i18n="evidence">证据</dt>
-                <dd data-i18n="resumeEvidence">本地 Streamlit UI、离线样例数据、报告生成、项目配置检查通过。</dd>
-              </div>
-            </dl>
-            <div class="card-actions">
-              <span data-i18n="githubPending">GitHub 待发布</span>
-              <span data-i18n="demoPending">Demo 待补</span>
-            </div>
-          </article>
+  <footer id="connect" class="connect fade-up">
+    <h2 class="section-label"><span class="label-accent">06</span> <span data-i18n="connectLabel">Connect</span></h2>
+    <nav class="connect-links">
+      <a href="https://github.com/wksudud" target="_blank" rel="noopener">github.com/wksudud</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="mailto:3141942330@qq.com">3141942330@qq.com</a>
+    </nav>
+    <p class="signature" data-i18n="signature">Built by myself, with my own systems.</p>
+  </footer>
 
-          <article class="project-card">
-            <div class="card-top">
-              <span class="status process" data-i18n="statusProcess">工程化流程</span>
-              <span class="project-index">03</span>
-            </div>
-            <h3>Multica Workflow</h3>
-            <p class="tagline" data-i18n="multicaTagline">多 Agent 项目治理流程，用于任务拆解、并发执行、审查和发布门禁。</p>
-            <dl>
-              <div>
-                <dt data-i18n="problem">问题</dt>
-                <dd data-i18n="multicaProblem">Agent 项目容易漂移，需要清晰边界、上下文包、验证证据和风险控制。</dd>
-              </div>
-              <div>
-                <dt data-i18n="workflow">流程</dt>
-                <dd data-i18n="multicaWorkflow">需求 intake → ContextPacket → 分工执行 → R-GPT 审查 → 验证与交付。</dd>
-              </div>
-              <div>
-                <dt data-i18n="evidence">证据</dt>
-                <dd data-i18n="multicaEvidence">当前作品集项目包、验收标准、集成追踪表和配置检查记录。</dd>
-              </div>
-            </dl>
-            <div class="card-actions">
-              <span data-i18n="publicNarrative">公开安全叙事</span>
-              <span data-i18n="noRuntime">不发布 runtime</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="workflowEyebrow">工作方式</p>
-          <h2 id="workflow-title" data-i18n="workflowTitle">每个项目都留下边界、接口、验证和可复用资产。</h2>
-        </div>
-        <div class="timeline">
-          <div><span>01</span><strong data-i18n="stepIntake">定义目标</strong><p data-i18n="stepIntakeCopy">明确岗位、用户、输入输出、保护区域和验收条件。</p></div>
-          <div><span>02</span><strong data-i18n="stepBuild">小步实现</strong><p data-i18n="stepBuildCopy">优先做最小可验证切片，避免无边界扩张。</p></div>
-          <div><span>03</span><strong data-i18n="stepVerify">证据验证</strong><p data-i18n="stepVerifyCopy">用 smoke test、配置检查、截图或报告证明结果。</p></div>
-          <div><span>04</span><strong data-i18n="stepPackage">作品包装</strong><p data-i18n="stepPackageCopy">沉淀 README、主页文案、简历 bullet 和下一步。</p></div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow" data-i18n="contactEyebrow">Next</p>
-          <h2 id="contact-title" data-i18n="contactTitle">适合投递：AI Agent、LLM 应用工程、AIOps / 网络智能化。</h2>
-          <p data-i18n="contactCopy">这不是传统算法作品集，而是围绕真实岗位场景搭建的 Agent 工程资产。</p>
-        </div>
-        <div class="contact-panel">
-          <a href="https://github.com/wksudud" target="_blank" rel="noreferrer">github.com/wksudud</a>
-          <span data-i18n="resumePending">简历下载待接入</span>
-          <span data-i18n="emailPending">邮箱待用户确认</span>
-        </div>
-      </section>
-    </main>
-
-    <script src="./script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
