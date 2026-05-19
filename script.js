@@ -184,6 +184,7 @@
         en: 'Material-to-opportunity matching.'
       },
       links: [
+        { label: 'Live Demo', href: 'https://multica-agent-workflow-template-5xmbi6a5exwxxqorrhrnzn.streamlit.app/' },
         { label: 'GitHub', href: 'https://github.com/wksudud/resumefit-agent' }
       ],
       motivation: {
@@ -203,8 +204,8 @@
         en: 'It turns self-presentation into a systems problem: materials, opportunities, and project evidence need to align in one semantic structure.'
       },
       evidence: {
-        zh: '公开 GitHub 仓库已创建，包含源码、测试、样例数据和离线验证流程；Streamlit Demo 等待网页端登录后部署。',
-        en: 'The public GitHub repository is live with source code, tests, sample data, and offline verification; Streamlit deployment is pending web sign-in.'
+        zh: '公开 GitHub 仓库与 Streamlit Demo 已上线，包含源码、测试、样例数据和离线验证流程。',
+        en: 'The public GitHub repository and Streamlit demo are live, with source code, tests, sample data, and offline verification.'
       }
     },
     {
